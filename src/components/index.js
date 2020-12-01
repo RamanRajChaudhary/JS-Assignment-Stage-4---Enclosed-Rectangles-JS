@@ -8,7 +8,7 @@
 
 const { parse } = require("@babel/core");
 
-function updateStructure(rec1,rec2){
+function updateStructure(recA,recB){
 	//write your code
 	if(contains(recA, recB)){
 		const relativeDim = relative(recA, recB);
@@ -46,7 +46,7 @@ function relative(recA, recB){
 	}
 	return res;
 }
-function contains(recA, resB) {
+function contains(recA, recB) {
 	const recAn = normalize(recA);
 	const recBn = normalize(recB);
 
